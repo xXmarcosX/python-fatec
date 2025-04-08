@@ -1,5 +1,0 @@
-Uma conversão implicita ocorre quando um valor é
-convertido automaticamente de um tipo de dado para o outr
-
-Uma conversão explicita é usada quando seu destino é um tipo de dado
-que armazena um valor inferior ou que obrigatoriamente seuja necessario seu uso
