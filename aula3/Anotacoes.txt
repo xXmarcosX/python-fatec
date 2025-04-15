@@ -1,3 +1,5 @@
 A ultima aspas de uma string adiciona um nulo (null) automaticamente
 
 No python, podemos usar os [] para representar o indice de um objeto => string[0]
+
+Tudo em python é um objeto
