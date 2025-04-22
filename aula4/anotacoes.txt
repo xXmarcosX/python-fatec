@@ -4,3 +4,5 @@ Tuplas, diferentemente de listas e dicionários são imutáveis
 
 Utilize tuplas quando você souber que os valores contidos 
 nas tuplas não podem ser alterados de maneira alguma
+
+não é possível adicionar, alterar ou excluir os dados de uma tupla
