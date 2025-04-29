@@ -1,6 +1,6 @@
 num1 = float(input('Digite o primeiro número '))
 op = input('Digite a operação (+, -, * ou /): ')
-num2 = float(input('Digitr o segundo número '))
+num2 = float(input('Digite o segundo número '))
 
 if op == '+':
     print(f'Resultdo: {num1 + num2}')
@@ -14,4 +14,4 @@ elif op == '/':
     else:
         print(f'Resultado: {num1 / num2}')
 else:
-    print('Operação inválida')
+    print('Operação inválida. Digite apenas (+, -, * ou /)')

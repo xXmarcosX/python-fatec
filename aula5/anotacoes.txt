@@ -1,0 +1,11 @@
+Sintaxe range: range (start, stop, step)
+
+start (opcional): o número inicial da sequencia
+stop: o número final da sequencia. Obrigatório
+setp: A quantidade que o numero da sequencia aumenta a cada passo
+
+O número final não é incluido, logo, se você quiser mostrar números de 0 até 10, a função deve ser => range(0, 11)
+
+LAÇO FOR:
+
+No laço for, é Obrigatório incluir uma coleção de valores
