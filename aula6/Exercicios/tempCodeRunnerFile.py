@@ -1,1 +1,0 @@
-numero_aleatorio = random.randint(1, 101)
