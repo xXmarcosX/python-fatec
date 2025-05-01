@@ -5,6 +5,12 @@ alfabeto = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
 alfabeto_minusculo = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
  'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
+print('Crie um senha com as seguintes restrições:\n'
+    '- Pelo menos uma letra maiúscula\n'
+    '- Pelo menos uma letra minúsucla\n'
+    '- Pelo menos um digite numérico\n'
+    '- Pelo menos um caractere especial (!, @, #, $, %, *): ')
+
 while True:
     especial = []
     numeros = []
@@ -17,11 +23,7 @@ while True:
     incorreto_alfabeto = True
     incorreto_alfabeto_min = True
 
-    senha = input('\nCrie um senha com as seguintes restrições:\n'
-    '- Pelo menos uma letra maiúscula\n'
-    '- Pelo menos uma letra minúsucla\n'
-    '- Pelo menos um digite numérico\n'
-    '- Pelo menos um caractere especial (!, @, #, $, %, *): ')
+    senha = input('\nDigite sua senha: ')
 
     for caractere in especiais:
         for letra in senha:
@@ -53,8 +55,10 @@ while True:
     if incorreto_especial or incorreto_numerico or incorreto_alfabeto or incorreto_alfabeto_min or incorreto_oito:
         print('\nSua senha não atende aos seguintes requisitos:')
 
+        print('')
+
         if len(senha) < 8:
-            print('\n❌ Mínimo 8 caracteres') 
+            print('❌ Mínimo 8 caracteres') 
 
         if len(especial) == 0:
             print('❌ Pelo menos um caractere especial')
