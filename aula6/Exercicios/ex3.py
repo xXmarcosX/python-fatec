@@ -62,7 +62,6 @@ while True:
 
         if incorreto_alfabeto_min:
             print('❌ Pelo menos uma letra minuscula')
-        
         continue
     else:
         print('\n✅ Senha aceita com sucesso!!!')

@@ -1,0 +1,7 @@
+sintaxe do slicing
+
+slice(inicio, fim, passo)
+
+inicio = O indice do caracte onde a fatia começa
+fim = O indice do caractere onde a fatia termina
+passo = o incremento entre os indices
