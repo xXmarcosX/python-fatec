@@ -6,6 +6,7 @@ desconto_vinte_cinco = lambda x: x * 0.25
 valores = []
 valor_original = []
 desconto = []
+vl_desc = []
 
 while True:
     val = float(input('Digite um valor: '))
@@ -20,15 +21,19 @@ while True:
 for valor in valores:
     if valor >= 50 and valor <= 200:
         desconto.append(valor - desconto_dez(valor))
+        vl_desc.append(desconto_dez(valor))
     
     elif valor > 200 and valor <= 500:
          desconto.append(valor - desconto_quinze(valor))
+         vl_desc.append(desconto_quinze(valor))
 
     elif valor > 500 and valor <= 1000:
         desconto.append(valor - desconto_vinte(valor))
+        vl_desc.append(desconto_vinte(valor))
 
     elif valor > 1000:
         desconto.append(valor - desconto_vinte_cinco(valor))
+        vl_desc.append(desconto_vinte_cinco(valor))
 
     else:
         desconto.append(valor)
@@ -37,4 +42,5 @@ print('')
 
 for i in range(len(valor_original)):
     print(f'Valor original: {valor_original[i]}')
+    print(f'Valor do desconto: {vl_desc[i]}')
     print(f'Valor com desconto: {desconto[i]}\n')
