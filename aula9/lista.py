@@ -33,6 +33,8 @@ for valor in valores:
     else:
         desconto.append(valor)
 
+print('')
+
 for i in range(len(valor_original)):
     print(f'Valor original: {valor_original[i]}')
     print(f'Valor com desconto: {desconto[i]}\n')
