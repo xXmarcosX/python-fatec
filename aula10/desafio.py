@@ -17,9 +17,11 @@ resp: str = ""
 def cal_fgts(salario: float):
     return (salario / 100) * 8
 
+
 def show_users(lista):
     for i in range(len(lista)):
-        print(f'{ids[i]} | {nomes[i]} | {salarios[i]} | {fgts_s[i]} | {inss_s[i]} | {salario_liquidos[i]}')
+        print(f'{ids[i]} | {nomes[i]} | {salarios[i]:.2f} | {fgts_s[i]:.2f} | {inss_s[i]:.2f} | {salario_liquidos[i]:.2f}')
+
 
 def cal_inss(salario: float):
     if salario >= 4190.84: 
@@ -50,14 +52,12 @@ while True:
     inss_s.append(inss)
     salario_liquidos.append(salario_liquido)
 
-    print('INSS: ', cal_inss(salario))
-
     resp = input('Deseja adicionar outro usuário?: ')
 
-    while resp != 's'.lower() and resp != 'n'.lower():
+    while resp.lower() != 's' and resp.lower() != 'n':
         resp = input('Digite apenas "s" ou "n": ')
 
-    if resp == "n":
+    if resp.lower() == "n":
         break
 
 print('')
